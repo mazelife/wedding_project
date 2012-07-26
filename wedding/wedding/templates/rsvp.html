@@ -1,0 +1,27 @@
+{% extends "base.html" %}{% load static %}
+
+{% block title %}RSVP{% endblock %}
+
+{% block main %}
+<br><br><h1>RSVP</h1>
+
+<form method="post">
+    <p><time>October 14<sup>th</sup> 2012, 3:00 PM</time> <em>at</em> <a title="Get directions." href="https://www.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=3100+Elm+Avenue,+Baltimore,+MD+21211&aq=0&oq=3100+elm+avenue+baltimore++21211&sll=39.325062,-76.631189&sspn=0.011652,0.02032&vpsrc=0&ie=UTF8&hq=&hnear=3100+Elm+Ave,+Baltimore,+Maryland+21211&t=m&z=16&iwloc=A">The Elm</a>,<br> 3100 Elm Avenue baltimore MD 21211</p>
+    {% csrf_token %}
+
+    <label class="above-field" for="id_name">{{ form.name.label }}:</label>
+    {{ form.name }}
+    {{ form.name.errors }}
+    <label class="checkbox-label">{{ form.attending.label }}:&nbsp;{{ form.attending }}</label>
+    {{ form.attending.errors }}
+    <label for="id_guests">{{ form.guests.label }}: {{ form.guests }}</label>
+    {{ form.guests.errors }}
+    <button type="submit">RSVP</button>
+</form>
+<p class="confirm" id="attend">Thanks! We look forward to seeing you. Email <a href="">James</a> if you have other questions.</p>
+<p class="confirm" id="skip">So you can't make it, but thanks for letting us know.</p>
+{% endblock %}
+
+{% block extrajs %}
+<script src="{% static "scripts/rsvp.js" %}"></script>
+{% endblock %}

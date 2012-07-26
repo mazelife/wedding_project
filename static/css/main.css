@@ -1,0 +1,222 @@
+/***************************************************************
+    TYPOGRAPHY
+
+Dove grey:  #9e9e9a
+Gold:       #a6a061
+Lavender:   #826284
+Pearl:      #f4f4f4;
+Black:      #2b292b;
+
+
+***************************************************************/
+
+h1, h2 , h3 {
+    color: #2b292b;
+    font-family: 'ArvoRegular', Arial, sans-serif;
+    text-align: center;
+}
+p, blockquote, address, time, label {
+    color: #2b292b;
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+body {
+    background-color: #bec2c7;
+    background: url("../images/paper_bg.png") repeat 0 0;
+}
+
+a, a:visited {
+    color: #754f99;
+    text-decoration: none;
+}
+a:hover {
+    color: #826284;
+    text-decoration: underline;
+}
+
+sup { font-size: 0.9em; }
+
+address { 
+    font-style: normal;
+}
+
+blockquote {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-decoration: upper;
+    text-transform: uppercase;
+    width: 400px;
+    margin: 40px auto;
+}
+blockquote span {
+    display: block;
+    text-transform: none;
+    font-size: 16px;
+    text-align: right;
+}
+
+#page {
+    background: #f4f4f4;
+    min-height: 200px;
+    width: 800px;
+    margin: 50px auto;
+    padding-bottom: 100px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* Panels */
+
+.panel#intro {
+    background: url("../images/hops.png") no-repeat center 5px;
+    padding-top: 250px;
+    margin-bottom: 100px;
+}
+
+.panel#details {
+    background: #826284;
+    color: #f4f4f4;
+    margin-bottom: 120px;
+    background: #826284; /* Old browsers */
+    background: -moz-linear-gradient(top,  #826284 63%, #755477 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(63%,#826284), color-stop(100%,#755477)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #826284 63%,#755477 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #826284 63%,#755477 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #826284 63%,#755477 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #826284 63%,#755477 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#826284', endColorstr='#755477',GradientType=0 ); /* IE6-9 */
+}
+
+    .panel#details * {
+        color: #f4f4f4;
+        font-size: 20px;
+    }
+    .panel#details a { text-decoration: underline; }
+    .panel#details p {
+        text-align: center;
+        margin: 0;
+        padding-left: 28px;
+    }
+    .panel#details a:hover {
+        color: #d6d6d6;
+    }
+    .panel#details div {
+        background: url("../images/elm.png") no-repeat 35px 5px;
+        height: 200px;
+        padding-top: 50px
+    }
+
+.panel#rsvp {
+    margin: 0px auto;
+    padding: 20px 70px;
+    width: 400px;
+    background: #a6a061; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a6a061 84%, #989250 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(84%,#a6a061), color-stop(100%,#989250)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #a6a061 84%,#989250 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #a6a061 84%,#989250 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #a6a061 84%,#989250 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #a6a061 84%,#989250 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6a061', endColorstr='#989250',GradientType=0 ); /* IE6-9 */
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+    .panel#rsvp div {
+        margin: 0px auto;
+        width: 300px;
+        border: 1px solid silver;
+        padding: 40px;
+    }
+    .panel#rsvp div > * { margin: 0px auto; }
+
+a.button {
+    display: block;
+    color: #fff;
+    font-family: 'ArvoRegular', Arial, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* Forms */
+
+input {
+    border: 1px solid silver;
+    height: 25px;
+    width: 350px;
+}
+
+label {
+    margin: 20px 4px;
+}
+
+    label.above-field {
+        margin-bottom: 5px;
+    }
+
+input, label {
+    display: block;
+}
+
+input#id_attending {
+    width: auto;
+    height: auto;
+    margin-top: -2px;
+    display: inline;
+}
+
+input#id_guests {
+    width: 40px;
+    display: inline;
+}
+
+button {
+    color: #fff;
+    background: #a6a061;
+    border: 0px;
+    padding: 4px 20px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    
+}
+
+form {
+    background: #fff url("../images/thistle.png") no-repeat top right;
+    height: 280px;
+    margin: 30px 45px;
+    padding: 30px 20px 60px 20px;
+}
+
+.errorlist { padding: 0 }
+.errorlist li {
+    background: #9e0b0f;
+    color: #fff;
+    list-style-type: none;
+    margin: 0;
+    padding: 2px 0 2px 4px;
+    width: 348px;
+}
+
+.confirm {
+    background: #826284;
+    color: #f4f4f4;
+    font-size: 20px;
+    margin-bottom: 120px;
+    text-align: center;
+    margin: 80px 0 0 0;
+    padding: 40px 0;
+    background: #826284; /* Old browsers */
+    background: -moz-linear-gradient(top,  #826284 63%, #755477 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(63%,#826284), color-stop(100%,#755477)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #826284 63%,#755477 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #826284 63%,#755477 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #826284 63%,#755477 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #826284 63%,#755477 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#826284', endColorstr='#755477',GradientType=0 ); /* IE6-9 */
+}
+    .confirm * {
+        color: #f4f4f4 !important;
+    }
+    .confirm a { text-decoration: underline; }

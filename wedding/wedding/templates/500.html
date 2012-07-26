@@ -1,0 +1,10 @@
+{% comment %}
+
+This template provides for a special-case behavior in the case of runtime errors in view code.
+If a view results in an exception, Django will show this template.
+
+NB: The default 500 view passes *no* variables to this template and is rendered with an 
+empty Context to lessen the chance of additional errors. This means that the 
+variable is not available.
+
+{% endcomment %}
