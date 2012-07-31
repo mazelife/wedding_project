@@ -1,4 +1,6 @@
 www:
     type: python
+    environment:
+        DJANGO_RUNTIME_ENVIRONMENT: production
 db:
     type: postgresql
