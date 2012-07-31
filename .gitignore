@@ -21,3 +21,5 @@ pip-log.txt
 .tox
 
 *collected_static*
+# SQLite Databases
+*.db
