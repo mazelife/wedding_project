@@ -1,5 +1,4 @@
-import os
-
+import json
 """
 This module attempts to find settings in two ways:
 
@@ -37,7 +36,12 @@ for setting in dir(base):
         locals().update({setting: getattr(base, setting)})
 
 allowed_envs = ('dev', 'staging', 'production')
-runtime_env = os.environ.get('DJANGO_RUNTIME_ENVIRONMENT', 'dev')
+try:
+    with open('/home/dotcloud/environment.json') as f:
+        dotcloud_env = json.load(f)
+        runtime_env = dotcloud_env['DJANGO_RUNTIME_ENVIRONMENT']
+except IOError:
+    runtime_env = 'dev'
 if not runtime_env in allowed_envs:
     from django.core.exceptions import ImproperlyConfigured
     raise ImproperlyConfigured((
