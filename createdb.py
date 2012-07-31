@@ -15,7 +15,7 @@ def create_dbs():
         db_type = db['ENGINE']
         assert db_type.endswith('postgresql_psycopg2'), "Only Postgres is supported"
         print 'creating database %s on %s' % (db_name, host)
-        con = psycopg2.connect(host=host, user=user, password=password, port=port, database='postgres')
+        con = psycopg2.connect(host=host, user=user, password=password, port=port, database=db_name)
         con.set_isolation_level(0)
         cur = con.cursor()
         try:
