@@ -10,7 +10,7 @@ def create_dbs():
         host = db['HOST']
         user = db['USER']
         password = db['PASSWORD']
-        port = db['PORT']
+        port = str(db['PORT'])  
         db_name = db['NAME']
         db_type = db['ENGINE']
         assert db_type.endswith('postgresql_psycopg2'), "Only Postgres is supported"
