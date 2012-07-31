@@ -1,7 +1,6 @@
-from django.shortcuts import get_object_or_404
 from django.views.generic import CreateView, TemplateView
 
-from invites import forms, models
+from wedding.invites import forms, models
 
 
 class Home(TemplateView):
@@ -17,4 +16,3 @@ class RSVP(CreateView):
     def form_valid(self, form):
         redirect_response = super(RSVP, self).form_valid(form)
         return redirect_response
-    

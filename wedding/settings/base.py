@@ -129,7 +129,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'compressor',
-    'invites',
+    'wedding.invites',
 )
 
 # A sample logging configuration. The only tangible logging

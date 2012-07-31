@@ -1,6 +1,6 @@
 from django import forms
 
-from invites.models import RSVP
+from wedding.invites.models import RSVP
 
 
 class RSVPForm(forms.ModelForm):
