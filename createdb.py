@@ -28,7 +28,7 @@ def create_dbs():
 if __name__ == '__main__':
     import sys
     print("create_dbs start")
-    from wedding.wsgi import *
+    from wsgi import *
     create_dbs()
     print("create_dbs all done")
 
