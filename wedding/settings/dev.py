@@ -37,3 +37,5 @@ DEBUG_TOOLBAR_CONFIG = {
 
 # Log sent emails to the console.
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+COMPRESS_ENABLED = False

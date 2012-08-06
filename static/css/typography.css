@@ -46,3 +46,14 @@
 
 }
 
+@font-face {
+	font-family: 'Ovo';
+	src: url('../fonts/Ovo-Regular.eot');
+    src: url('../fonts/Ovo-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Ovo-Regular.woff') format('woff'),
+         url('../fonts/Ovo-Regular.ttf') format('truetype'),
+         url('../fonts/Ovo-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+

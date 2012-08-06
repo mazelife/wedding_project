@@ -12,9 +12,11 @@ Black:      #2b292b;
 
 h1, h2 , h3 {
     color: #2b292b;
-    font-family: 'ArvoRegular', Arial, sans-serif;
+    font-family: 'Ovo', serif;
     text-align: center;
 }
+
+h1 { font-size: 2.2em; }
 p, blockquote, address, time, label {
     color: #2b292b;
     font-family: Georgia, Cambria, "Times New Roman", Times, serif;
@@ -134,7 +136,7 @@ blockquote span {
 a.button {
     display: block;
     color: #fff;
-    font-family: 'ArvoRegular', Arial, sans-serif;
+    font-family: 'Ovo', serif;
     text-decoration: none;
     text-align: center;
     font-size: 22px;
