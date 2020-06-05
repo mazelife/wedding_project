@@ -1,4 +1,4 @@
 # These are the libraries that are required to run the wedding project.
 
-Django==1.4
+Django==1.11.29
 django-compressor==1.1.2
